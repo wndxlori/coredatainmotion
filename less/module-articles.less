@@ -1,0 +1,79 @@
+// 
+// Articles Module
+// --------------------------------------------------
+
+.article {
+  .divider-top-double();
+  margin: 50px auto;
+  .header {
+    .article-title {
+      margin: 0 0 20px;
+    }
+    .article-title,
+    .article-title a {
+      .light-weight-display();
+      color: @dark-color;
+    }
+    .article-title a:hover {
+      color: @major-color;
+      text-decoration: none;
+    }
+    .article-meta {
+      margin-bottom: 50px;
+    }
+  }
+  .continue {
+    margin: 0;
+    text-align: right;
+  }
+}
+.article:first-child {
+  border: none;
+  padding-top: 0;
+}
+.inverse .article-title a {
+  color: @light-color;
+}
+.inverse .article-title a:hover {
+  color: @minor-color;
+}
+
+// 
+// Module variation with fewer characters per line increases readability.
+// -------------------------
+.articles-narrow {
+  
+  .article {
+    min-width: 100%;
+    max-width: 100%;
+    
+    .header {
+      .article-title {
+        text-align: center;
+      }
+      .article-meta {
+        text-align: center;
+        
+      }
+    }
+  }
+  @media (min-width: @screen-phone) {
+    .article {
+      min-width: @screen-xs / 2;
+      max-width: 80%;
+      margin: 50px auto;
+    }
+  }
+  @media (min-width: @screen-tablet) {
+    .article {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: @screen-desktop) {
+    .article {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+}

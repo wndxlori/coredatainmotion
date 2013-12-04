@@ -1,0 +1,53 @@
+// 
+// BASE
+// --------------------------------------------------
+// Contains basic styles for modules and various elements.
+// Includes adjustments to Bootstrap's  grid.
+// If this file gets too large, I'll break it into separate files for organization.
+
+
+// Module Merging
+
+// use when two layout modules in a row have the same inverse setting and/or same background textures
+// set inline class on all elements that need to merge EXCEPT the last
+// long selector makes the styles more important
+body div.merge-bottom {
+  padding: @merged-module-padding;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+// Grid
+
+// Effectively disable the largest max-width for Bootstrap's grid .container
+@media (min-width: @screen-lg-desktop) {
+  .container {
+    max-width: @container-lg-desktop;
+  }
+}
+
+// Images
+
+img {
+  .image();
+}
+.inverse img {
+  .inverse-image();
+}
+
+// basic graphicbox
+
+.graphicbox {
+  background-position: left top;
+  background-repeat: no-repeat;
+  .bg(@box-bg; @color-scheme);
+}
+
+// Forms
+
+.form-control {
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical @padding-base-horizontal;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+}

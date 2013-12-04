@@ -1,0 +1,115 @@
+// 
+// LOGO
+// --------------------------------------------------
+
+
+//
+// List of all supported @logo values
+// --------------------------------------------------
+// 1  @logo: friendly;
+// 2  @logo: fashion-italic;
+// 3  @logo: fashion-caps;
+// 4  @logo: script;
+// 5  @logo: ultralight;
+// 6  @logo: block;
+// 7  @logo: sans;
+// 8  @logo: serif;
+// 9  @logo: slab;
+// 10 @logo: fat-serif;
+// 11 @logo: techy;
+
+// 
+// Core Logo
+// --------------------------------------------------
+
+.logo {
+  &,
+   i {
+    margin: 0;
+    line-height: 1em;
+  }
+  span, em, strong {
+    color: fadeout(@dark-color, 30%);
+  }
+  a {
+    color: @dark-color;
+  }
+  a:hover {
+    
+  }
+}
+.inverse .logo {
+  span, em, strong {
+    color: fadeout(@light-color, 30%) !important;
+  }
+  a {
+    color: @light-color !important;
+  }
+  a:hover {
+    color: @minor-color !important;
+  }
+}
+.inverse-major .logo {
+  span, em, strong {
+    color: fadeout(@light-color, 30%) !important;
+  }
+  a {
+    color: @light-color !important;
+  }
+  a:hover {
+    color: @minor-color !important;
+  }
+}
+.inverse-minor .logo {
+  span, em, strong {
+    color: fadeout(@dark-color, 30%) !important;
+  }
+  a {
+    color: @dark-color !important;
+  }
+  a:hover {
+    color: @major-color !important;
+  }
+}
+
+//
+// Logo Options
+// --------------------------------------------------
+
+
+.logo-font(friendly) {
+  @import 'logo-friendly.less';
+}
+.logo-font(fashion-italic) {
+  @import 'logo-fashion-italic.less';
+}
+.logo-font(fashion-caps) {
+  @import 'logo-fashion-caps.less';
+}
+.logo-font(script) {
+  @import 'logo-script.less';
+}
+.logo-font(ultralight) {
+  @import 'logo-ultralight.less';
+}
+.logo-font(block) {
+  @import 'logo-block.less';
+}
+.logo-font(sans) {
+  @import 'logo-sans.less';
+}
+.logo-font(serif) {
+  @import 'logo-serif.less';
+}
+.logo-font(slab) {
+  @import 'logo-slab.less';
+}
+.logo-font(fat-serif) {
+  @import 'logo-fat-serif.less';
+}
+.logo-font(techy) {
+  @import 'logo-techy.less';
+}
+
+// write @font-face and rules for chosen logo font family
+.logo-font(@logo);

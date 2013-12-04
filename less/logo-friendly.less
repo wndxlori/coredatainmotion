@@ -1,0 +1,71 @@
+// 
+// Overlock
+// @logo: friendly;
+// -------------------------------------------------
+
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/overlock/v2/ZjhG32V52fTjgecWg8rQhfesZW2xOQ-xsNqO47m55DA.eot);
+  src:  local('Overlock'), local('Overlock-Regular'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/ZjhG32V52fTjgecWg8rQhfesZW2xOQ-xsNqO47m55DA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/Pr-80_x4SIOocpxz2VxC5fesZW2xOQ-xsNqO47m55DA.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=7Gr7jVB3G1M_srHXS09j0fesZW2xOQ-xsNqO47m55DA#Overlock) format('svg');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/overlock/v2/EcjpF2hW5gSZ4M16YLdG82fQcKutQXcIrRfyR5jdjY8.eot);
+  src:  local('Overlock-Bold'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/EcjpF2hW5gSZ4M16YLdG82fQcKutQXcIrRfyR5jdjY8.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/EcjpF2hW5gSZ4M16YLdG84bN6UDyHWBl620a-IRfuBk.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=EcjpF2hW5gSZ4M16YLdG83NsigHlcrQGNV8nkUSFQfc#Overlock) format('svg');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: italic;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/overlock/v2/pYVxOAQWse7sQP47UJIxi1QlYEbsez9cZjKsNMjLOwM.eot);
+  src:  local('Overlock-Italic'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/pYVxOAQWse7sQP47UJIxi1QlYEbsez9cZjKsNMjLOwM.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/pYVxOAQWse7sQP47UJIxixsxEYwM7FgeyaSgU71cLG0.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=pYVxOAQWse7sQP47UJIxi6WUboTb-jS2tyCOQMtm97g#Overlock) format('svg');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: italic;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/overlock/v2/wFWnYgeXKYBks6gEUwYnfGzklk6MJbhg7BmBP42CjCQ.eot);
+  src:  local('Overlock-BoldItalic'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/wFWnYgeXKYBks6gEUwYnfGzklk6MJbhg7BmBP42CjCQ.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/overlock/v2/wFWnYgeXKYBks6gEUwYnfAFhaRv2pGgT5Kf0An0s4MM.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=wFWnYgeXKYBks6gEUwYnfD9QLNJZUvW8xv4RpDkyVDQ#Overlock) format('svg');
+}
+
+
+@logo-font-family: 'Overlock', helvetica, arial, sans-serif;
+
+.logo {
+  font-family: @logo-font-family;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2em;
+  span, strong, em {
+    font-weight: 400;
+  }
+  em {
+    font-style: italic;
+  }
+  &.logo-medium {
+    font-size: 46px
+  }
+  &.logo-small {
+    font-size: 30px;
+  }
+  &.logo-tiny {
+    font-size: 18px;
+  }
+  
+}

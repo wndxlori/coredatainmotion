@@ -1,0 +1,86 @@
+// 
+// TYPOGRAPHY
+// --------------------------------------------------
+
+
+//
+// List of all supported @font-pairing values
+// -------------------------------------------------
+// 1  @font-pairing: sans;
+// 2  @font-pairing: friendly_sans;
+// 3  @font-pairing: fat-serif_serif;
+// 4  @font-pairing: serif;
+// 5  @font-pairing: sans_serif;
+// 6  @font-pairing: fat-serif_sans;
+// 7  @font-pairing: fashion_serif;
+// 8  @font-pairing: slab_sans;
+// 9  @font-pairing: techy_slab;
+// 
+
+.typography(sans) {
+  @import 'pairing-sans.less';
+}
+.typography(friendly_sans) {
+  @import 'pairing-friendly_sans.less';
+}
+.typography(fat-serif_serif) {
+  @import 'pairing-fat-serif_serif.less';
+}
+.typography(serif) {
+  @import 'pairing-serif.less';
+}
+.typography(sans_serif) {
+  @import 'pairing-sans_serif.less';
+}
+.typography(fat-serif_sans) {
+  @import 'pairing-fat-serif_sans.less';
+}
+.typography(fashion_serif) {
+  @import 'pairing-fashion_serif.less';
+}
+.typography(slab_sans) {
+  @import 'pairing-slab_sans.less';
+}
+.typography(techy_slab) {
+  @import 'pairing-techy_slab.less';
+}
+.typography(@font-pairing);
+
+
+//
+// Base type rules
+// -------------------------------------------------
+  
+@font-size-base:          @pairing-font-size-base;  // was 16px;
+@font-size-large:         @pairing-font-size-large;  // was ceil(@font-size-base * 1.25);
+@font-size-small:         @pairing-font-size-small;  // was ceil(@font-size-base * 0.85);
+@line-height-base:        1.5;
+@line-height-computed:    floor(@font-size-base * @line-height-base); // was ~24px
+
+.text-font-family {
+  font-family: @text-font-family;
+}
+.display-font-family {
+  font-family: @display-font-family;
+}
+body {
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+}
+h1, h2 {
+  line-height: @headline-line-height;
+}
+h3,h4,h5,h6,
+.lead {
+  line-height: @line-height-base;
+}
+strong, b {
+  .bold-weight();
+}
+strong em,
+em strong {
+  .bold-italic();
+}
+em {
+  .normal-italic();
+}

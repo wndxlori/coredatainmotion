@@ -1,0 +1,295 @@
+//
+// Playfair Display & Lora
+// @font-pairing: fashion_serif;
+// --------------------------------------------------
+
+
+// playfair display
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/2NBgzUtEeyB-Xtpr9bm1Cbe3AsAJmdYwF3n7gHK4QTQ.eot);
+  src:  local('Playfair Display'), local('PlayfairDisplay-Regular'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/2NBgzUtEeyB-Xtpr9bm1Cbe3AsAJmdYwF3n7gHK4QTQ.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/2NBgzUtEeyB-Xtpr9bm1CZa6Tn9fxpDPuRSK4Gn5Ybw.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=2NBgzUtEeyB-Xtpr9bm1CWrjLcHVtfJQyoPByBFBHV4#PlayfairDisplay) format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIP9t3sFHLYVCat4wgzBFPuA.eot);
+  src:  local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIP9t3sFHLYVCat4wgzBFPuA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIDTx0bvFePwcBpOqDg3uc64.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=UC3ZEjagJi85gF9qFaBgIJSCSk5fkE1XWXxKnr_alI0#PlayfairDisplay) format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display Black';
+  font-style: normal;
+  font-weight: 900;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIAuN-nmEHN-0a0PBjqdQgMA.eot);
+  src:  local('Playfair Display Black'), local('PlayfairDisplay-Black'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIAuN-nmEHN-0a0PBjqdQgMA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/UC3ZEjagJi85gF9qFaBgIAG5DHOz35zlU4kDybZd5w0.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=UC3ZEjagJi85gF9qFaBgIN1h81_9xN4uc1MbAn8qEJ0#PlayfairDisplay) format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/9MkijrV-dEJ0-_NWV7E6N1unUjFLosqcXqVe-epvtEE.eot);
+  src:  local('Playfair Display Italic'), local('PlayfairDisplay-Italic'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/9MkijrV-dEJ0-_NWV7E6N1unUjFLosqcXqVe-epvtEE.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/9MkijrV-dEJ0-_NWV7E6N3aqFElqJjV-H5EUExnZgmU.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=9MkijrV-dEJ0-_NWV7E6N9nDrVFD_vCoEQynnz14rTQ#PlayfairDisplay) format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEJYohve3Gbzn3GgIZD9ns0s.eot);
+  src:  local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEJYohve3Gbzn3GgIZD9ns0s.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEOfyGQywPtiY5YH2ACZKFIE.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=n7G4PqJvFP2Kubl0VBLDEGlEt66pLyckBXsEJiEAoG8#PlayfairDisplay) format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display Black';
+  font-style: italic;
+  font-weight: 900;
+  src:  url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEBwbcr0VIqVW1DEpepcsnOs.eot);
+  src:  local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEBwbcr0VIqVW1DEpepcsnOs.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDEPLxYRX_augqRssi2o6umho.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=n7G4PqJvFP2Kubl0VBLDEBLH-wlHFVsrSNaWQY2jEqg#PlayfairDisplay) format('svg');
+}
+
+// Lora
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/lora/v5/rMDaOpSw-8ss9B8Y3bLqyA.eot);
+  src:  local('Lora'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/rMDaOpSw-8ss9B8Y3bLqyA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/5-AYViExptypIdFoLKAxTA.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=b9Q3-ov7xEcW76ymki76Ag#Lora) format('svg');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/lora/v5/1HJZfNlOezBHPPwzRKlEcQ.eot);
+  src:  local('Lora Bold'), local('Lora-Bold'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/1HJZfNlOezBHPPwzRKlEcQ.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/XpaepWHcooQHSRnzoohUng.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=zqoBbCqeaofBZQ-8-sdxfQ#Lora) format('svg');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/lora/v5/EJ2E0VlN4DLy-wT0t9nagw.eot);
+  src:  local('Lora Italic'), local('Lora-Italic'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/EJ2E0VlN4DLy-wT0t9nagw.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/wXeMvRh7Gui36p_I04Ex6g.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=Hm0XuTrgQw0KWgYD2kG1hw#Lora) format('svg');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/lora/v5/_IxjUs2lbQSu0MyFEAfa7fY6323mHUZFJMgTvxaG2iE.eot);
+  src:  local('Lora Bold Italic'), local('Lora-BoldItalic'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/_IxjUs2lbQSu0MyFEAfa7fY6323mHUZFJMgTvxaG2iE.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/lora/v5/_IxjUs2lbQSu0MyFEAfa7T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=_IxjUs2lbQSu0MyFEAfa7Zbd9NUM7myrQQz30yPaGQ4#Lora) format('svg');
+}
+
+@display-font-family: 'Playfair Display', georgia, serif;
+@text-font-family: 'Lora', georgia, serif;
+
+// Map available weights to used weights.
+// --------------------------------------------------
+// Must be specific to each font pairing.
+// Prevents issues if, for example:
+// 1) the font family doesn't include a light weight but a module uses one.
+// 2) a bold-italic isn't available but there is some <strong><em>markup like this</em></strong>.
+// If used incorrectly, you can get crazy results with gibberish text when your computer replaces webfonts with system fonts.
+
+// Display font family
+// -------------------------
+
+.light-weight-display {
+  font-weight: 400;
+}
+.normal-weight-display {
+  font-weight: 400;
+}
+.bold-weight-display {
+  font-weight: 700;
+}
+.black-weight-display {
+  font-family: 'Playfair Display Black', georgia, serif;
+  font-weight: 900;
+}
+.light-italic-display {
+  font-style: italic;
+  font-weight: 400;
+}
+.normal-italic-display {
+  font-style: italic;
+  font-weight: 400;
+}
+.bold-italic-display {
+  font-style: italic;
+  font-weight: 700;
+}
+.black-italic-display {
+  font-family: 'Playfair Display Black', georgia, serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+// Text font family
+// -------------------------
+// No light, light italic, black, or black italic available
+
+.light-weight {
+  font-weight: 400;
+}
+.normal-weight {
+  font-weight: 400;
+}
+.bold-weight {
+  font-weight: 700;
+}
+.black-weight {
+  font-weight: 700;
+}
+.light-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+.normal-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+.bold-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+.black-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+// Override bootstrap defaults for this font pairing
+
+@pairing-font-size-base:    16px;
+@pairing-font-size-large:   18px;
+@pairing-font-size-small:   14px;
+@headline-line-height:      1.1em;
+
+// Assign which elements get which font family for each pairing.
+
+body {
+  font-family: @text-font-family;
+}
+  
+h1,h2,h3,h4,h5,h6,
+.lead {
+  font-family: @display-font-family;
+}
+
+// Pairing-specific font sizes, weights, and styles
+
+h1 {
+  font-size: 38px;
+  .black-weight-display();
+  em {
+    .black-italic-display();
+  }
+}
+h2 {
+  font-size: 36px;
+  .bold-weight-display();
+  em {
+    .bold-italic-display();
+  }
+}
+h3 {
+  font-size: 26px;
+  .bold-weight-display();
+  em {
+    .bold-italic-display();
+  }
+}
+h4 {
+  font-size: 20px;
+  .bold-weight-display();
+  em {
+    .bold-italic-display();
+  }
+}
+h5 {
+  font-size: 18px;
+  .black-weight-display();
+  text-transform: uppercase;
+  em {
+    .black-italic-display();
+  }
+}
+h6 {
+  font-size: 16px;
+  .black-weight-display();
+  text-transform: uppercase;
+  em {
+    .black-italic-display();
+  }
+}
+.lead {
+  font-size: 18px;
+  .normal-weight-display();
+  em {
+    .normal-italic-display();
+  }
+}
+
+// Responsive typography
+
+@media (min-width: @screen-tablet) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+    .bold-weight-display();
+    em {
+      .bold-italic-display();
+    }
+  }
+  h6 {
+    font-size: 16px;
+    .bold-weight-display();
+    em {
+      .bold-italic-display();
+    }
+  }
+  .lead {
+    font-size: 20px;
+  }
+}

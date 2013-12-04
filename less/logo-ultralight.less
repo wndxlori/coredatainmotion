@@ -1,0 +1,51 @@
+// 
+// Source Sans Pro
+// @logo: ultralight;
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Source Sans Pro ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src:  url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGFl_EbE5kujbLzdX6sKqH6g.eot);
+  src:  local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'),
+        url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGFl_EbE5kujbLzdX6sKqH6g.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGMa9awK0IKUjIWABZIchFI8.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=toadOcfmlt9b38dHJxOBGFuXahqWP-sUHr1s2YHnD8g#SourceSansPro) format('svg');
+}
+@font-face {
+  font-family: 'Source Sans Pro ExtraLight';
+  font-style: italic;
+  font-weight: 200;
+  src:  url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6CPAIRw3TZpZEbtNzDM7Nlo.eot);
+  src:  local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'),
+        url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6CPAIRw3TZpZEbtNzDM7Nlo.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6PwwJPUC4r0o28cUCbhjOjM.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=fpTVHK8qsXbIeTHTrnQH6NokrLcNl3mmy2MgPnfEsB0#SourceSansPro) format('svg');
+}
+
+@logo-font-family: 'Source Sans Pro ExtraLight', helvetica, arial, sans-serif;
+
+.logo {
+  font-family: @logo-font-family;
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  span, strong, em {
+    font-weight: 200;
+    font-style: italic;
+  }
+  em {
+    font-style: italic;
+  }
+  &.logo-medium {
+    font-size: 46px
+  }
+  &.logo-small {
+    font-size: 30px;
+  }
+  &.logo-tiny {
+    font-size: 18px;
+  }
+}

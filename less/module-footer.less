@@ -1,0 +1,32 @@
+// 
+// Footer Module
+// --------------------------------------------------
+
+// Simple variation
+// -------------------------
+
+.footer-simple {
+  .module-short-padding();
+  
+  .logo,
+  p, h1, h2, h3, h4, h6, small {
+    text-align: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  
+  // adjust layout for desktop-sized screens
+  @media (min-width: @screen-desktop) {
+    .logo {
+      text-align: left;
+      margin: 0;
+      .pull-left();
+    }
+    .legal,
+    p, small {
+      margin: 5px 0 0;
+      .pull-right();
+    }
+  }  
+}

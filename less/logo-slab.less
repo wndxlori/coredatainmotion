@@ -1,0 +1,64 @@
+// 
+// Bitter
+// @logo: slab;
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/bitter/v4/XexqN1a_o27MhVVdJFKAcA.eot);
+  src:  local('Bitter-Regular'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/XexqN1a_o27MhVVdJFKAcA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/SHIcXhdd5RknatSgOzyEkA.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=GczfTD6N3Eo3_EcQuBd3Kg#Bitter) format('svg');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src:  url(http://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGfY6323mHUZFJMgTvxaG2iE.eot);
+  src:  local('Bitter-Bold'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGfY6323mHUZFJMgTvxaG2iE.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=evC1haE-MsorTl_A7_uSGZbd9NUM7myrQQz30yPaGQ4#Bitter) format('svg');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src:  url(http://themes.googleusercontent.com/static/fonts/bitter/v4/_5gUH5fHSDnpRupSlBdtgfesZW2xOQ-xsNqO47m55DA.eot);
+  src:  local('Bitter-Italic'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/_5gUH5fHSDnpRupSlBdtgfesZW2xOQ-xsNqO47m55DA.eot?#iefix) format('embedded-opentype'),
+        url(http://themes.googleusercontent.com/static/fonts/bitter/v4/eMS0tViDqryBl0EG1pqFZfesZW2xOQ-xsNqO47m55DA.woff) format('woff'),
+        url(http://themes.googleusercontent.com/licensed/font?kit=ORW2p5cHVPQkt0uy5woGCPesZW2xOQ-xsNqO47m55DA#Bitter) format('svg');
+}
+
+@logo-font-family: 'Bitter', "Courier New", Courier, serif;
+
+.logo {
+  font-family: @logo-font-family;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2em;
+  span, strong, em {
+    font-weight: 400;
+  }
+  em {
+    font-style: italic;
+  }
+  strong em,
+  em strong {
+    font-weight: 400 !important; // no bold italic available, so !important prevents showing fallback font
+  }
+  &.logo-medium {
+    font-size: 46px
+  }
+  &.logo-small {
+    font-size: 30px;
+  }
+  &.logo-tiny {
+    font-size: 18px;
+  }
+  
+}
