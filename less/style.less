@@ -5,24 +5,22 @@
 @import '../less/cascade.less';
 @import 'cascade-variables.less';
 
-// TODO: WHY THIS NO WORK??!?!?!?!?
-// Hopefully centers the content of the stagger boxes
-@media (min-width: 768px) {
-	.staggers {
-		 /* ghost element */
-		.row:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-			margin-right: -0.25em;
-		}
+@media (min-width: 992px){
+  // center 2nd stagger text
+  // could use an id or class instead of :nth-child
+  .stagger-graphicbox:nth-child(2) h3 {
+    margin-top: 30px;
+  }
+  //align right. should be included. Sorry about that!
+  div.footer-simple p.legal {
+    text-align: right;
+  }
+}
 
-		.row {
-			.graphicbox, .description {
-			  display: inline-block;
-			  vertical-align: middle;
-			}
-		}
-	}
+@media (min-width: 768px) {
+  //align longer text with top of graphicbox instead
+  .stagger-graphicbox:nth-child(3) h3,
+  .stagger-graphicbox:nth-child(4) h3{
+    margin-top: 0;
+  }
 }
